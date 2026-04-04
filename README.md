@@ -139,6 +139,6 @@ This system:
 -   Maintains confidentiality (fully local execution)\
 -   Scales across enterprise workflows
 
-# Note
-I have intenionally added multiple comments in code base because It was quiet complicated when I was working on
-it for the first time. And it to help me revise the code work flow when I revist it.
+# 📝Note
+I have intenionally added multiple comments in each line of code because It was quiet complicated for me when I first started working on
+it. Plus these comments will help me to revise the code work flow when I revisit it.
