@@ -36,7 +36,7 @@ https://huggingface.co/spaces/Pd18/Meeting_Minutes
 
 -   whisper_model_name = "openai/whisper-base.en"
 -   minutes_model_name = "gpt-oss:120b-cloud"
--   max_transcript_characters = 14000
+-   max_transcript_characters = 14000 for V1 but NONE in V2
 -   chunk_length_seconds = 45
 
 ### Engineering Rationale
