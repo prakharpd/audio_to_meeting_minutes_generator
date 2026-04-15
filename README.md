@@ -25,7 +25,7 @@ https://huggingface.co/spaces/Pd18/Meeting_Minutes
 # 🔁 4-Step Processing Pipeline
 
 1.  Load & Resample Audio (16kHz mono)\
-2.  Transcribe in 45s chunks (2s overlap reduces word loss)\
+2.  Transcribe in 4 min chunks (2s overlap reduces word loss)\
 3.  Generate structured minutes (temperature = 0 → deterministic
     output)\
 4.  Render + Save Markdown
