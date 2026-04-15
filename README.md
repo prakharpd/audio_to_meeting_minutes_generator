@@ -142,3 +142,4 @@ This system:
 # 📝Note
 - I have intenionally added multiple comments in each line of code because It was quiet complicated for me when I first started working on
 it. Plus these comments will help me to revise the code work flow when I revisit it.
+- V2.ipynb can create Meeting Minutes transcript for more than hour long meeting. While V1.ipynb can be used for shorter meeting around 30-45 min.
