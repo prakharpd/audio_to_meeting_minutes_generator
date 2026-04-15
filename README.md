@@ -7,27 +7,27 @@ Local)
 
 ## 🚀 What This System Does
 
--   Converts MP3 (auto 16kHz mono) → text using Whisper\
--   Transforms transcript → board-grade structured minutes\
--   Enforces 9 mandatory Markdown sections\
--   Saves `meeting_minutes.md` automatically\
+-   Converts MP3 (auto 16kHz mono) → text using Whisper
+-   Transforms transcript → board-grade structured minutes
+-   Enforces 9 mandatory Markdown sections
+-   Saves `meeting_minutes.md` automatically
 -   Auto-detects GPU (≈2--4× faster with CUDA)
 
 ------------------------------------------------------------------------
 
 ## 🌐 Live Deployed Version
 
-Hugging Face Space (Deployed App):\
+Hugging Face Space (Deployed App):
 https://huggingface.co/spaces/Pd18/Meeting_Minutes
 
 ------------------------------------------------------------------------
 
 # 🔁 4-Step Processing Pipeline
 
-1.  Load & Resample Audio (16kHz mono)\
-2.  Transcribe in 45s chunks (2s overlap reduces word loss)\
+1.  Load & Resample Audio (16kHz mono)
+2.  Transcribe in 45s chunks (2s overlap reduces word loss)
 3.  Generate structured minutes (temperature = 0 → deterministic
-    output)\
+    output)
 4.  Render + Save Markdown
 
 ------------------------------------------------------------------------
@@ -41,10 +41,10 @@ https://huggingface.co/spaces/Pd18/Meeting_Minutes
 
 ### Engineering Rationale
 
--   45s chunking → Handles long recordings reliably\
--   14,000 character cap → Prevents LLM overload\
--   Temperature 0 → Ensures repeatable outputs\
--   Timestamp injection → Improves traceability
+-   45s Chunking → Handles long recordings reliably
+-   14,000 Character Cap in V1 → Prevents LLM overload
+-   Temperature 0 → Ensures repeatable outputs
+-   Timestamp Injection → Improves Traceability
 
 ------------------------------------------------------------------------
 
@@ -52,30 +52,30 @@ https://huggingface.co/spaces/Pd18/Meeting_Minutes
 
 The model strictly produces:
 
-1.  Meeting Summary (6--8 sentences)\
-2.  Attendees\
-3.  Agenda\
-4.  Key Discussion Points (2--4 bullets per topic + timestamps)\
-5.  Decisions Made\
-6.  Action Items\
-7.  Votes / Motions\
-8.  Risks / Blockers\
+1.  Meeting Summary (6--8 sentences)
+2.  Attendees
+3.  Agenda
+4.  Key Discussion Points (2--4 bullets per topic + timestamps)
+5.  Decisions Made
+6.  Action Items
+7.  Votes / Motions
+8.  Risks / Blockers
 9.  Next Steps
 
-✔ No transcript copying\
-✔ No hallucinated decisions\
-✔ Explicit-only action extraction\
-✔ Clean professional Markdown
+✔ No Transcript Copying
+✔ No Hallucinated Decisions
+✔ Explicit-only Action Extraction
+✔ Clean Professional Markdown
 
 ------------------------------------------------------------------------
 
 # 🧠 Built-In Reliability Features
 
--   Auto GPU/CPU detection (float16 vs float32)\
--   Duplicate transcript filtering\
--   Silent token streaming (clean console)\
--   Deterministic LLM generation\
--   Character-length safety control
+-   Auto GPU/CPU Detection (float16 vs float32)
+-   Duplicate Transcript Filtering
+-   Silent Token Streaming (clean console)
+-   Deterministic LLM Generation
+-   Character-Length Safety Control
 
 ------------------------------------------------------------------------
 
@@ -83,49 +83,49 @@ The model strictly produces:
 
 Suitable for:
 
-Corporate & Board Governance\
-- Board meetings\
-- Investor reviews\
-- Compliance documentation\
-- Audit-ready records
+Corporate & Board Governance
+- Board Meetings
+- Investor Reviews
+- Compliance Documentation
+- Audit-Ready Records
 
-Public Sector & Councils\
-- Municipal council meetings\
-- Committee sessions\
-- Policy discussions
+Public Sector & Councils
+- Municipal Meetings
+- Committee Sessions
+- Policy Discussions
 
-Enterprise Operations\
-- Strategy reviews\
-- Cross-functional meetings\
-- Risk assessment sessions
+Enterprise Operations
+- Strategy Reviews
+- Cross-Functional Meetings
+- Risk Assessment Sessions
 
 ------------------------------------------------------------------------
 
 # 📦 Required Packages
 
-pip install torch torchvision torchaudio\
-pip install librosa transformers openai ipython\
+pip install torch torchvision torchaudio
+pip install librosa transformers openai ipython
 pip install sentencepiece accelerate notebook
 
 ------------------------------------------------------------------------
 
 # 🦙 Ollama Setup
 
-ollama pull gpt-oss:120b-cloud\
+ollama pull gpt-oss:120b-cloud
 ollama serve
 
 ------------------------------------------------------------------------
 
 # ▶️ Run Instructions
 
-python -m venv venv\
-source venv/Scripts/activate\
+python -m venv venv
+source venv/Scripts/activate
 jupyter notebook
 
 Execute all cells → Output:
 
 -   meeting_minutes.md\
--   Structured board-ready minutes
+-   Structured Board-Ready Minutes
 
 ------------------------------------------------------------------------
 
@@ -133,10 +133,10 @@ Execute all cells → Output:
 
 This system:
 
--   Processes long meetings reliably\
--   Produces structured governance-ready documentation\
--   Reduces manual note-taking effort significantly\
--   Maintains confidentiality (fully local execution)\
+-   Processes long meetings reliably
+-   Produces structured governance-ready documentation
+-   Reduces manual note-taking effort significantly
+-   Maintains confidentiality (fully local execution)
 -   Scales across enterprise workflows
 
 # 📝Note
