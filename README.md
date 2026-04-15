@@ -140,5 +140,5 @@ This system:
 -   Scales across enterprise workflows
 
 # 📝Note
-I have intenionally added multiple comments in each line of code because It was quiet complicated for me when I first started working on
+- I have intenionally added multiple comments in each line of code because It was quiet complicated for me when I first started working on
 it. Plus these comments will help me to revise the code work flow when I revisit it.
