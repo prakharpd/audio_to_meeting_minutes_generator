@@ -1,3 +1,5 @@
+31/5/26: There is small bug in Github in which Jupyternotbook previews are not visible. So in many of my repos you have to download it to look that file locally.
+
 # 📄 Meeting Minutes via Voice
 
 Industrial-Ready MP3 → Transcript → Structured Board Minutes (Fully
