@@ -62,10 +62,10 @@ The model strictly produces:
 8.  Risks / Blockers
 9.  Next Steps
 
-✔ No Transcript Copying
-✔ No Hallucinated Decisions
-✔ Explicit-only Action Extraction
-✔ Clean Professional Markdown
+ No Transcript Copying 
+ No Hallucinated Decisions
+ Explicit-only Action Extraction
+ Clean Professional Markdown
 
 ------------------------------------------------------------------------
 
