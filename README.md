@@ -1,11 +1,11 @@
-# 📄 Meeting Minutes via Voice
+#  Meeting Minutes via Voice
 
 Industrial-Ready MP3 → Transcript → Structured Board Minutes (Fully
 Local)
 
 ------------------------------------------------------------------------
 
-## 🚀 What This System Does
+##  What This System Does
 
 -   Converts MP3 (auto 16kHz mono) → text using Whisper
 -   Transforms transcript → board-grade structured minutes
@@ -15,14 +15,14 @@ Local)
 
 ------------------------------------------------------------------------
 
-## 🌐 Live Deployed Version
+##  Live Deployed Version
 
 Hugging Face Space (Deployed App):
 https://huggingface.co/spaces/Pd18/Meeting_Minutes
 
 ------------------------------------------------------------------------
 
-# 🔁 4-Step Processing Pipeline
+#  4-Step Processing Pipeline
 
 1.  Load & Resample Audio (16kHz mono)
 2.  Transcribe in 45s chunks (2s overlap reduces word loss)
@@ -32,7 +32,7 @@ https://huggingface.co/spaces/Pd18/Meeting_Minutes
 
 ------------------------------------------------------------------------
 
-# ⚙️ Core Configuration
+#  Core Configuration
 
 -   whisper_model_name = "openai/whisper-base.en"
 -   minutes_model_name = "gpt-oss:120b-cloud"
@@ -48,7 +48,7 @@ https://huggingface.co/spaces/Pd18/Meeting_Minutes
 
 ------------------------------------------------------------------------
 
-# 🎯 Output Guarantees
+#  Output Guarantees
 
 The model strictly produces:
 
@@ -69,7 +69,7 @@ The model strictly produces:
 
 ------------------------------------------------------------------------
 
-# 🧠 Built-In Reliability Features
+#  Built-In Reliability Features
 
 -   Auto GPU/CPU Detection (float16 vs float32)
 -   Duplicate Transcript Filtering
@@ -79,7 +79,7 @@ The model strictly produces:
 
 ------------------------------------------------------------------------
 
-# 🏭 Industrial Usability
+#  Industrial Usability
 
 Suitable for:
 
@@ -101,7 +101,7 @@ Enterprise Operations
 
 ------------------------------------------------------------------------
 
-# 📦 Required Packages
+#  Required Packages
 
 pip install torch torchvision torchaudio
 pip install librosa transformers openai ipython
@@ -109,14 +109,14 @@ pip install sentencepiece accelerate notebook
 
 ------------------------------------------------------------------------
 
-# 🦙 Ollama Setup
+#  Ollama Setup
 
 ollama pull gpt-oss:120b-cloud
 ollama serve
 
 ------------------------------------------------------------------------
 
-# ▶️ Run Instructions
+#  Run Instructions
 
 python -m venv venv
 source venv/Scripts/activate
@@ -129,7 +129,7 @@ Execute all cells → Output:
 
 ------------------------------------------------------------------------
 
-# 🏁 Final Outcome
+#  Final Outcome
 
 This system:
 
@@ -139,7 +139,7 @@ This system:
 -   Maintains confidentiality (fully local execution)
 -   Scales across enterprise workflows
 
-# 📝Note
+# Note
 - I have intenionally added multiple comments in each line of code because It was quiet complicated for me when I first started working on
 it. Plus these comments will help me to revise the code work flow when I revisit it.
 - V2.ipynb can create Meeting Minutes transcript for more than hour long meeting. While V1.ipynb can be used for shorter meeting around 30-45 min.
