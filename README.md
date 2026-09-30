@@ -136,7 +136,7 @@ This system:
 -   Processes long meetings reliably
 -   Produces structured governance-ready documentation
 -   Reduces manual note-taking effort significantly
--   Maintains confidentiality (fully local execution)
+-   Maintains confidentiality (fully local execution of this)
 -   Scales across enterprise workflows
 
 # Note
