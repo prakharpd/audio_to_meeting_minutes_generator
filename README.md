@@ -87,7 +87,7 @@ Corporate & Board Governance
 - Board Meetings
 - Investor Reviews
 - Compliance Documentation
-- Audit-Ready Records
+  
 
 Public Sector & Councils
 - Municipal Meetings
